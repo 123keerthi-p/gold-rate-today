@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29" height="19" viewBox="0 0 29 19">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2493" data-name="Rectangle 2493" width="29" height="19" transform="translate(789 1953)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="neutral" transform="translate(-789 -1953)" clip-path="url(#clip-path)">
+    <g id="noun-expand-1124699_1_" data-name="noun-expand-1124699 (1)" transform="translate(753.222 1633.113) rotate(45)">
+      <path id="Path_2123" data-name="Path 2123" d="M268.916,197.6l4.391-4.518c.262-.27.176-.489-.2-.486l-4.561.036a1.05,1.05,0,0,1,.015-2.1l7.754-.129a1,1,0,0,1,1,1.03l-.1,8a1.021,1.021,0,1,1-2.041.016l.035-4.692c0-.388-.209-.473-.472-.2l-4.485,4.78-.018.018-4.392,4.518c-.262.27-.176.489.2.486l4.561-.036a1.051,1.051,0,0,1-.016,2.1l-7.766.117a1,1,0,0,1-1-1.03l.114-7.988a1.021,1.021,0,1,1,2.041-.017l-.035,4.692c0,.388.209.473.472.2l4.485-4.78.018-.018Z" transform="translate(-0.707 -0.707)" fill="#1e78c1" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,521 @@
+<script>
+    $(document).ready(function() {
+        $(".table-show-more .showmore").on("click", "a", function() {
+            $(this).parent().parent().toggleClass("opened");  
+            if($(this).parent().parent().hasClass('opened')){ 
+                $(this).html('Show Less');
+            }
+            else{
+                $(this).html('Show More');
+            }
+        });
+    });    
+</script>
+<section class="company-list-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 col-lg-8 col-md-12 col-sm-12 col-12">
+                <div class="element hide-system mobile-bottomborder mb-3">
+                    <div class="picture ad">
+                        <a href="#_"><img src="./assets/images/ad/ad-2.png"></a>
+                    </div>
+                    <p class="advertise-para">ADVERTISEMENT</p>
+                </div>
+                <div class="company-title">
+                    <h1 class="title-head">
+                        Gold Rate Today in Chennai - 29 January, 2025
+                    </h1>
+                </div>
+                <p class="mb-0">Gold price in Chennai today is ₹ 7,525 per gram for 22 karat gold and ₹ 8,209 per gram for 24 carat gold. Stay informed with the latest gold prices in Chennai, including today’s 22K and 24K rates. Compare daily prices, explore historical trends, and understand key factors influencing gold rates, such as market demand and global dynamics.</p>
+                <div class="price-section">
+                   <div class="price-sec-category">
+                      <div class="ct">
+                        <img src="./assets/images/gold.svg" alt="">
+                        <p><span>22ct</span> Gold Rate</p>
+                      </div>
+                      <div class="price">
+                        <strong>₹4720</strong>/1gram
+                        <span class="green"></span>
+                    </div>
+                   </div>
+                   <div class="price-sec-category">
+                        <div class="ct">
+                            <img src="./assets/images/gold.svg" alt="">
+                            <p><span>24ct</span> Gold Rate</p>
+                        </div>
+                        <div class="price">
+                            <strong>₹5720</strong>/1gram
+                            <span class="green"></span>
+                        </div>
+                   </div>
+                </div>
+
+                 <div class="price-filter">
+                    <div class="price-filter-category">
+                        <p class="metal-name">Gold</p>
+
+                        <!-- <select class="form-control no-click">
+                            <option value="Gold">Gold</option> -->
+                            <!-- <option value="Silver">Silver</option>
+                            <option value="platinum">platinum</option> -->
+                        <!-- </select> -->
+                         <!-- <input type="text" class="form-control" value="Gold" readonly> -->
+                    </div>
+                    <div class="price-filter-category">
+                        <p class="filter-date" id="filter-date"></p>
+                    </div>
+                     <script>
+                        const today = new Date();
+                        const formattedDate = today.toISOString().slice(0,10);
+                        document.getElementById("filter-date").textContent = formattedDate;
+                    </script>
+                    <div class="price-filter-category">
+                        <select class="state-select">
+                            <option value="">India</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Bengaluru">Bengaluru</option>
+                            <option value="Mumbai">Mumbai</option>
+                        </select>
+                    </div>
+                    <div class="price-filter-category">
+                        <p class="price-amount">₹5720</p>
+                    </div>
+                </div>
+
+                <p class="mt-3">* Today's gold price will be updated shortly with the latest market rates.</p>
+
+                <p class="mt-2 mb-0">Gold Rates in Chennai are witnessing a steady trend since the start of the year. Demand for gold in Chennai has been on the rise, with most of the demand coming for jewellery and less in gold biscuits and gold coins.</p>
+               
+                <div class="price-section all-categories">
+                   <div class="price-sec-category">
+                      <div class="ct silver"> 
+                        <img src="./assets/images/silver.svg" alt="">
+                        <p>Silver Rate</p>
+                      </div>
+                      <div class="price">
+                        <strong>₹265</strong>/1gram
+                        <span class="green"></span>
+                    </div>
+                    
+                   </div>
+                   
+                    <div class="fuel-prices">
+                        <div class="prices petrol">
+                            <div class="">
+                                <img src="./assets/images/petrol-icon.svg">
+                            </div>
+                            <div class="price-details">
+                                <a href=""><p class="title">Today’s <span id="location">Petrol price in Chennai</span></p></a>
+                                <p class="price-amount" id="price-amount">₹100.73/1Ltr</p>
+                            </div>
+                            
+                        </div>
+                        <div class="prices diesel">
+                            <div class="">
+                                <img src="./assets/images/diesel-icon.svg">
+                            </div>
+                            <div class="price-details">
+                                <a href=""><p class="title">Today’s <span id="location">Diesel price in Chennai</span></p></a>
+                                <p class="price-amount" id="price-amount">₹100.73/1Ltr</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+               
+                <div class="company-title">
+                    <h2 class="title-head">Today 1 Gram 22 Carat Gold Price Chennai (INR)</h2>
+                </div>
+
+                <div class="table-companies table-show-more">
+                    <table class="table table-balance-sheet">
+                        <thead>
+                            <tr>
+                                <th>Gram</th>
+                                <th>22ct Today</th>
+                                <th>22ct Yesterday</th>
+                                <th>Price Change</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="cr">
+                                <td><a href="#_">1 Gram</a></td>
+                                <td>₹5,720</td>
+                                <td>₹5,710</td>
+                                <td>₹10 <span class="green"></span></td>
+                            </tr>
+                            <tr class="cr">
+                                <td><a href="#_">8 Gram</a></td>
+                                <td>₹5,720</td>
+                                <td>₹5,710</td>
+                                <td>₹80 <span class="red"></span></td>
+                            </tr>
+                            <tr class="cr">
+                                <td><a href="#_">10 Gram</a></td>
+                                <td>₹5,720</td>
+                                <td>₹5,710</td>
+                                <td>₹100 <span class="green"></span></td>
+                            </tr>
+                            <tr class="cr">
+                                <td><a href="#_">100 Gram</a></td>
+                                <td>₹5,720</td>
+                                <td>₹5,710</td>
+                                <td>₹1000 <span class="green"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <small>*The above gold rates are indicative and do not include GST, TCS and other levies. For the exact rates contact your local jeweller.</small>
+                <div class="company-title mt-3">
+                    <h2 class="title-head">Today 1 Gram 24 Carat Gold Price in Chennai (INR)</h2>
+                </div>
+                <div class="table-companies table-show-more">
+                    <table class="table table-balance-sheet">
+                        <thead>
+                            <tr>
+                                <th>Gram</th>
+                                <th>22ct Today</th>
+                                <th>22ct Yesterday</th>
+                                <th>Price Change</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="cr">
+                                <td><a href="#_">1 Gram</a></td>
+                                <td>₹5,720</td>
+                                <td>₹5,710</td>
+                                <td>₹10 <span class="green"></span></td>
+                            </tr>
+                            <tr class="cr">
+                                <td><a href="#_">8 Gram</a></td>
+                                <td>₹5,720</td>
+                                <td>₹5,710</td>
+                                <td>₹80 <span class="red"></span></td>
+                            </tr>
+                            <tr class="cr">
+                                <td><a href="#_">10 Gram</a></td>
+                                <td>₹5,720</td>
+                                <td>₹5,710</td>
+                                <td>₹100 <span class="green"></span></td>
+                            </tr>
+                            <tr class="cr">
+                                <td><a href="#_">100 Gram</a></td>
+                                <td>₹5,720</td>
+                                <td>₹5,710</td>
+                                <td>₹1000 <span class="green"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- <div class="showmore">
+                        <a class="btnview">Show More</a>
+                    </div> -->
+                </div>
+                <small>*The above gold rates are indicative and do not include GST, TCS and other levies. For the exact rates contact your local jeweller.</small>
+                <div class="company-title mt-3">
+                    <h2 class="title-head">Yesterday Gold Rate for 22 & 24 Carat in Chennai (INR)</h2>
+                </div>
+                <div class="table-companies">
+                    <table class="table table-balance-sheet">
+                        <thead>
+                            <tr>
+                                <th>Gram</th>
+                                <th>22ct</th>
+                                <th>24ct</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="cr">
+                                <td>1 gram</td>
+                                <td>₹5,720(100)<span class="green"></span></td>
+                                <td>₹62,710(110)<span class="green"></span></td>
+                            </tr>
+                            <tr class="cr">
+                                <td>8 gram</td>
+                                <td>₹5,720(100)<span class="green"></span></td>
+                                <td>₹62,710(110)<span class="green"></span></td>
+                            </tr>
+                            <tr class="cr">
+                                <td>10 gram</td>
+                                <td>₹5,720(100)<span class="red"></span></td>
+                                <td>₹62,710(110)<span class="green"></span></td>
+                            </tr>
+                            <tr class="cr">
+                                <td>100 gram</td>
+                                <td>₹5,720(100)<span class="green"></span></td>
+                                <td>₹62,710(110)<span class="red"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="company-title mt-3">
+                    <h2 class="title-head">Historical Gold Rate in Chennai (10g)</h2>
+                </div>
+                <div class="table-companies">
+                    <table class="table table-balance-sheet">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>22ct</th>
+                                <th>24ct</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="cr">
+                                <td>May 9, 2023</td>
+                                <td>₹5,720(100)<span class="green"></span></td>
+                                <td>₹62,710(110)<span class="green"></span></td>
+                            </tr>
+                            <tr class="cr">
+                                <td>May 9, 2023</td>
+                                <td>₹5,720(100)<span class="green"></span></td>
+                                <td>₹62,710(110)<span class="green"></span></td>
+                            </tr>
+                            <tr class="cr">
+                                <td>May 9, 2023</td>
+                                <td>₹5,720(100)<span class="red"></span></td>
+                                <td>₹62,710(110)<span class="green"></span></td>
+                            </tr>
+                            <tr class="cr">
+                                <td>May 9, 2023</td>
+                                <td>₹5,720(100)<span class="green"></span></td>
+                                <td>₹62,710(110)<span class="red"></span></td>
+                            </tr>
+                            <tr class="cr">
+                                <td>May 9, 2023</td>
+                                <td>₹5,720(100)<span class="green"></span></td>
+                                <td>₹62,710(110)<span class="red"></span></td>
+                            </tr>
+                            <tr class="cr">
+                                <td>May 9, 2023</td>
+                                <td>₹5,720(100)<span class="green"></span></td>
+                                <td>₹62,710(110)<span class="green"></span></td>
+                            </tr>
+                            <tr class="cr">
+                                <td>May 9, 2023</td>
+                                <td>₹5,720(100)<span class="green"></span></td>
+                                <td>₹62,710(110)<span class="green"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="company-title mt-3">
+                    <h2 class="title-head"><a href="https://www.thehindubusinessline.com/markets/gold/" target="_blank">Latest from Gold & Silver</a></h2>
+                </div>
+                    <!-- List Section-->
+                    <div class="container list latest-gold-rate">
+                        <div class="row collapsed-element">
+                            <!-- row elements bigger -->
+                            <div class=" col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 after-border-right">
+                                <div class="element mobile-bottomborder">
+                                    <div class="picture ratio ratio-16x9">
+                                        <a href="#_"><img src="./assets/images/gold-image.png"></a>
+                                    </div>
+                                    <div class="picture-content">
+                                        <img src="./assets/images/icon/bl-premium.svg">
+                                        <div class="also-like-badge-redirect"><a href="#_">Zero Covid deaths in Tamil Nadu after nearly two years, with decreasing hospitals occupation</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 after-border-right after-border-left">
+                                <div class="element mobile-bottomborder">
+                                    <div class="picture ratio ratio-16x9">
+                                        <a href="#_"><img src="./assets/images/silver-image.png"></a>
+                                    </div>
+                                    <div class="picture-content">
+                                        <img src="./assets/images/icon/bl-premium.svg">
+                                        <div class="also-like-badge-redirect"><a href="#_">Zero Covid deaths in Tamil Nadu after nearly two years, with decreasing hospitals occupation</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 right-section-pic">
+                                <div class="element">
+                                    <img src="./assets/images/icon/bl-premium.svg">
+                                    <h3 class="title"><a href="#_">Crude oil futures trade lower after Russia agrees to fulfill supply</a></h3>
+                                </div>
+                                <div class="element">
+                                    <img src="./assets/images/icon/bl-premium.svg">
+                                    <h3 class="title" style="margin-top: 14px;"><a href="#_">Crude oil futures trade lower after Russia agrees to fulfill supply</a></h3>
+                                </div>
+                                <div class="element bottomborder-none">
+                                    <img src="./assets/images/icon/bl-premium.svg">
+                                    <h3 class="title" style="margin-top: 14px;"><a href="#_">Crude oil futures trade lower after Russia agrees to fulfill supply</a></h3>
+                                </div>
+                                <!-- <div class="showmore">
+                                    <a class="btnview" href="https://www.thehindubusinessline.com/markets/gold/">Show More</a>
+                                </div> -->
+                            </div> 
+                
+                        </div>
+                    </div>
+                <div class="company-title mt-3">
+                    <h2 class="title-head">Weekly & Monthly Graph, Gold Rates in Chennai</h2>
+                </div>
+                <div class="balance-sheet-img hide-mobile">
+                    <img src="./assets/images/Graph.png" alt="HDFC Bank Ltd" />
+                </div>
+                <div class="balance-sheet-img hide-system">
+                    <img src="./assets/images/graph-1.png" alt="HDFC Bank Ltd" />
+                    <img src="./assets/images/graph-2.png" alt="HDFC Bank Ltd" />
+                </div>
+                <!-- <p class="text-end">Powered by <a href="https://www.bankbazaar.com/" target="_blank">BankBazaar.com</a></p> -->
+                <div class="company-title mt-3">
+                    <h2 class="title-head">FAQ's</h2>
+                </div>
+                <div class="wrapper">
+                    <div class="accordion accordion-flush" id="myAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-heading1">
+                            <button class="accordion-button collapsed border-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">How to Invest in Gold in India? </button>
+                            </h2>
+                            <div id="flush-collapse1" class="accordion-collapse collapse border-0" aria-labelledby="flush-heading1" data-bs-parent="#myAccordion">
+                                <div class="accordion-body">
+                                    <p>Investing money in gold is worth because it is a hedge against inflation. Over a period of time, the return on gold investment is in line with the rate of inflation. It is worth investing in gold for a one more very valid reason. That is gold is negatively correlated to equity investments. Gold investments in India can be made in various ways such as jewellery, gold schemes, solid gold, gold ETFs (Exchange Traded Funds), gold FOFs (Funds of Funds), etc.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-heading2">
+                            <button class="accordion-button collapsed border-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">Where to buy Gold in India?</button>
+                            </h2>
+                            <div id="flush-collapse2" class="accordion-collapse collapse border-0" aria-labelledby="flush-heading2" data-bs-parent="#myAccordion">
+                                <div class="accordion-body">
+                                    <p>In India, gold can be bought from reputed jewellers like Tanishq, GRT, Kirtilal Kalidas, Damini, Prince Jewellery, Mehta Jewellery, Khazana Jewellery etc.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-heading3">
+                            <button class="accordion-button collapsed border-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">What is the gold price trend in India today? </button>
+                            </h2>
+                            <div id="flush-collapse3" class="accordion-collapse collapse border-0" aria-labelledby="flush-heading3" data-bs-parent="#myAccordion">
+                                <div class="accordion-body">
+                                    <p>In India, a steady trend is being observed for the gold rates from the beginning of 2022. The demand for this precious metal is increasing with most of the demand arising for gold jewellery.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-heading5">
+                            <button class="accordion-button collapsed border-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5"> What are the Factors affecting Gold Prices in India? </button>
+                            </h2>
+                            <div id="flush-collapse5" class="accordion-collapse collapse border-0" aria-labelledby="flush-heading5" data-bs-parent="#myAccordion">
+                                <div class="accordion-body">
+                                    <p>In India, gold prices are affected by various factors like inflation, demand and supply, interest rates, currency fluctuations, the Indian jewellery market, etc.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-heading6">
+                            <button class="accordion-button collapsed border-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">What are the Factors affecting Gold Prices in India?</button>
+                            </h2>
+                            <div id="flush-collapse6" class="accordion-collapse collapse border-0" aria-labelledby="flush-heading6" data-bs-parent="#myAccordion">
+                                <div class="accordion-body">
+                                    <p>In India, gold prices are affected by various factors like inflation, demand and supply, interest rates, currency fluctuations, the Indian jewellery market, etc.</p>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12 col-12">  
+                
+                <div class="element hide-mobile no-border">
+                    <div class="picture ad">
+                        <a href="#_"><img src="./assets/images/ad/ad-2.png"></a>
+                    </div>
+                    <p class="advertise-para">ADVERTISEMENT</p>
+                </div>
+
+                <div class="rate-list">
+                    <div class="base-list">
+                        <h2 class="mt-3">Gold Rates in Top Metro Cities</h2>
+                        <img src="./assets/images/gold.svg">
+                    </div>
+                    <ul>
+                        <li><a href="">Gold Rate In Agra</a></li>
+                        <li><a href="">Gold Rate In Ahmedabad</a></li>
+                        <li><a href="">Gold Rate In Bangalore</a></li>
+                        <li><a href="">Gold Rate In Bhilai</a></li>
+                        <li><a href="">Gold Rate In Bhopal</a></li>
+                        <li><a href="">Gold Rate In Bhubaneswar</a></li>
+                        <li><a href="">Gold Rate In Chandigarh</a></li>
+                        <li><a href="">Gold Rate In Chennai</a></li>
+                        <li><a href="">Gold Rate In Coimbatore</a></li>
+                        <li><a href="">Gold Rate In Dehradun</a></li>
+                        <li><a href="">Gold Rate In Faridabad</a></li>
+                        <li><a href="">Gold Rate In Ghaziabad</a></li>
+                        <li><a href="">Gold Rate In Guntur</a></li>
+                        <li><a href="">Gold Rate In Gurgaon</a></li>
+                        <li><a href="">Gold Rate In Guwahati</a></li>
+                        <li><a href="">Gold Rate In Hyderabad</a></li>
+                        <li><a href="">Gold Rate In Indore</a></li>
+                        <li><a href="">Gold Rate In Jabalpur</a></li>
+                        <li><a href="">Gold Rate In Jaipur</a></li>
+                        <li><a href="">Gold Rate In Jodhpur</a></li>
+                        <li><a href="">Gold Rate In Kanpur</a></li>
+                        <li><a href="">Gold Rate In Kolkata</a></li>
+                        <li><a href="">Gold Rate In Kota</a></li>
+                        <li><a href="">Gold Rate In Kozhikode</a></li>
+                        <li><a href="">Gold Rate In Lucknow</a></li>
+                        <li><a href="">Gold Rate In Ludhiana</a></li>
+                        <li><a href="">Gold Rate In Madurai</a></li>
+                        <li><a href="">Gold Rate In Mumbai</a></li>
+                        <li><a href="">Gold Rate In Mysore</a></li>
+                        <li><a href="">Gold Rate In Nagpur</a></li>
+                        <li><a href="">Gold Rate In Noida</a></li>
+                        <li><a href="">Gold Rate In Panaji</a></li>
+                        <li><a href="">Gold Rate In Raipur</a></li>
+                        <li><a href="">Gold Rate In Ranchi</a></li>
+                        <li><a href="">Gold Rate In Shimla</a></li>
+                        <li><a href="">Gold Rate In Surat</a></li>
+                    </ul>
+                    
+                </div>
+
+                <div class="rate-list">
+                    <div class="base-list">
+                        <a href><h2 class="mt-3">Silver Rates in Top Metro Cities</h2></a>
+                        <img src="./assets/images/silver.svg">
+                    </div>
+                    <ul>
+                        <li><a href="">Silver Rate In Agra</a></li>
+                        <li><a href="">Silver Rate In Ahmedabad</a></li>
+                        <li><a href="">Silver Rate In Bangalore</a></li>
+                        <li><a href="">Silver Rate In Bhilai</a></li>
+                        <li><a href="">Silver Rate In Bhopal</a></li>
+                        <li><a href="">Silver Rate In Bhubaneswar</a></li>
+                        <li><a href="">Silver Rate In Chandigarh</a></li>
+                        <li><a href="">Silver Rate In Chennai</a></li>
+                        <li><a href="">Silver Rate In Faridabad</a></li>
+                        <li><a href="">Silver Rate In Ghaziabad</a></li>
+                        <li><a href="">Silver Rate In Guntur</a></li>
+                        <li><a href="">Silver Rate In Jammu and kashmir</a></li>
+                        <li><a href="">Silver Rate In Jharkhand</a></li>
+                        <li><a href="">Silver Rate In Karnataka</a></li>
+                        <li><a href="">Silver Rate In Kerala</a></li>
+                        <li><a href="">Silver Rate In Madhya pradesh</a></li>
+                        <li><a href="">Silver Rate In Maharashtra</a></li>
+                        <li><a href="">Silver Rate In Odisha</a></li>
+                        <li><a href="">Silver Rate In Punjab</a></li>
+                        <li><a href="">Silver Rate In Rajasthan</a></li>
+                        <li><a href="">Silver Rate In Tamil nadu</a></li>
+                        <li><a href="">Silver Rate In Telangana</a></li>
+                        <li><a href="">Silver Rate In Uttar pradesh</a></li>
+                        <li><a href="">Silver Rate In Uttarakhand</a></li>
+                        <li><a href="">Silver Rate In Delhi</a></li>
+                        <li><a href="">Silver Rate In Raipur</a></li>
+                        <li><a href="">Silver Rate In Ranchi</a></li>
+                        <li><a href="">Silver Rate In Shimla</a></li>
+                        <li><a href="">Silver Rate In Surat</a></li>
+                        <li><a href="">Silver Rate In Uttar pradesh</a></li>
+                        <li><a href="">Silver Rate In Uttarakhand</a></li>
+                        <li><a href="">Silver Rate In West bengal</a></li>
+                        <li><a href="">Silver Rate In Delhi</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</section>
